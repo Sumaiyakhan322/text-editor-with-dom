@@ -30,7 +30,7 @@ document.getElementById('right').addEventListener('click',function()
     const value=document.getElementById('given-text');
     value.style.textAlign='right';
 })
-document.getElementById('font-size').addEventListener('click',function()
+document.getElementById('font-size').addEventListener('mousemove',function()
 {
     const givenText=document.getElementById('given-text');
     const fieldOfTheFont=document.getElementById('font-size');
@@ -38,14 +38,12 @@ document.getElementById('font-size').addEventListener('click',function()
     const valueOfTheFont=parseFloat(valueofTheFontString);
     givenText.style.fontSize=valueOfTheFont +'px';
     
-
-    
 })
 
 
 
 
-document.getElementById('font-color').addEventListener('click',function()
+document.getElementById('font-color').addEventListener('mousemove',function()
 {
     const value=document.getElementById('given-text');
     const fieldOfTheFont=document.getElementById('font-color');
