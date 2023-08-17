@@ -1,8 +1,8 @@
 document.getElementById('bold').addEventListener('click',function(){
     // const value=getTheValue('given-text');
     const value=document.getElementById('given-text');
+      value.style.fontWeight='bold';
     
-    value.style.fontWeight='bold';
     
 })
 document.getElementById('italic').addEventListener('click',function(){
@@ -30,7 +30,7 @@ document.getElementById('right').addEventListener('click',function()
     const value=document.getElementById('given-text');
     value.style.textAlign='right';
 })
-document.getElementById('font-size').addEventListener('mousemove',function()
+document.getElementById('font-size').addEventListener('input',function()
 {
     const givenText=document.getElementById('given-text');
     const fieldOfTheFont=document.getElementById('font-size');
@@ -43,7 +43,7 @@ document.getElementById('font-size').addEventListener('mousemove',function()
 
 
 
-document.getElementById('font-color').addEventListener('mousemove',function()
+document.getElementById('font-color').addEventListener('input',function()
 {
     const value=document.getElementById('given-text');
     const fieldOfTheFont=document.getElementById('font-color');
