@@ -30,30 +30,27 @@ document.getElementById('right').addEventListener('click',function()
     const value=document.getElementById('given-text');
     value.style.textAlign='right';
 })
-// document.getElementById('font-size').addEventListener('click',function()
-// {
-//     const value=document.getElementById('given-text');
-//     const fieldOfTheFont=document.getElementById('font-size');
-//     const valueofTheFontString=fieldOfTheFont.value;
-//     const valueOfTheFont=parseFloat(valueofTheFontString);
-//     value.style.fontSize=valueOfTheFont +'px';
-// })
-document.getElementById('font-size').addEventListener('click', function() {
-    const value = document.getElementById('given-text');
-    const fontSizeField = document.getElementById('font-size');
-    const fontSizeStringValue = fontSizeField.value;
-    const fontSizeValue = parseFloat(fontSizeStringValue);
-
-    setFontSize(value, fontSizeValue); // Call the utility function to apply font size
-});
-
 document.getElementById('font-size').addEventListener('click',function()
 {
-    const value=document.getElementById('given-text');
+    const givenText=document.getElementById('given-text');
     const fieldOfTheFont=document.getElementById('font-size');
     const valueofTheFontString=fieldOfTheFont.value;
     const valueOfTheFont=parseFloat(valueofTheFontString);
-    value.style.fontSize=valueOfTheFont +'px';
+    givenText.style.fontSize=valueOfTheFont +'px';
+    
+
+    
+})
+
+
+
+
+document.getElementById('font-color').addEventListener('click',function()
+{
+    const value=document.getElementById('given-text');
+    const fieldOfTheFont=document.getElementById('font-color');
+    const valueofTheFontString=fieldOfTheFont.value;
+    value.style.color=valueofTheFontString;
 })
 
 
